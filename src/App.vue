@@ -1,28 +1,27 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-  <Example paragraph="palavras"/>
+  <ObjectComponent></ObjectComponent>
 </template>
 
 <script>
-import Example from '.components/Example.vue'
-import HelloWorld from './components/HelloWorld.vue'
-
+/*
+import LoopComponent from './components/LoopComponent.vue';
 export default {
   name: 'App',
   components: {
-    HelloWorld, Example
+    LoopComponent
   }
 }
+*/
+
+import ObjectComponent from './components/ObjectComponent.vue';
+export default {
+  name: 'App',
+  components:{
+    ObjectComponent
+  }
+}
+
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
