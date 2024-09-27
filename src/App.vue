@@ -1,27 +1,25 @@
 <template>
-  <ObjectComponent></ObjectComponent>
+  <center style="background-color: pink; height:500px;">
+    <nav>
+      <router-link class="botao" to="/circulo">Circulo  </router-link>
+      <router-link class="botao" to="/trapezio">Trapezio  </router-link>
+      <router-link class="botao" to="/triangulo">Triangulo </router-link>
+      <router-link class="botao" to="/aaaa"> Aaaa </router-link>
+    </nav>
+    <router-view></router-view>
+  </center>
 </template>
 
 <script>
-/*
-import LoopComponent from './components/LoopComponent.vue';
-export default {
-  name: 'App',
-  components: {
-    LoopComponent
-  }
+export default{
+  name: 'App'
 }
-*/
-
-import ObjectComponent from './components/ObjectComponent.vue';
-export default {
-  name: 'App',
-  components:{
-    ObjectComponent
-  }
-}
-
 </script>
 
 <style>
+  .botao{
+    margin:20px;
+    text-decoration: none;
+    color: black;
+  }
 </style>
